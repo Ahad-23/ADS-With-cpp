@@ -71,7 +71,7 @@ int prims()
                 nearest[i]=start_v;
             }
     
-    for(int i=1;i<cities;i++)
+    for(int i=0;i<cities-1;i++)
         {
              min=999;
             for(int k=0;k<cities-1;k++)
@@ -104,8 +104,9 @@ int prims()
           }
           cout<<"\n";
         }
-        return mincost;
+        
         }
+        return mincost;
 }
 };
 
